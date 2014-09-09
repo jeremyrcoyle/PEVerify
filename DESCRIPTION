@@ -1,0 +1,16 @@
+Package: PEVerify
+Title: Persistent Efficiency M&V model
+Version: 0.1
+Date: 2014-09-08
+Author: Jeremy Coyle <jeremyrcoyle@gmail.com>
+Maintainer: Jeremy Coyle <jeremyrcoyle@gmail.com>
+Description: Persistent Efficiency M&V model
+License: GPL-3
+Depends:
+    R (>= 3.0.0),
+    origami,
+Suggests:
+    testthat,
+    class,
+    glmnet
+LazyData: true
