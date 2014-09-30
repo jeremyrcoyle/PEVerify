@@ -16,7 +16,7 @@ install.packages(“devtools”)
 
 Note that you may need to install libcurl if you don’t already have it installed.
 
-On ubuntu, you can run the following from the command line:
+On Ubuntu, you can run the following from the command line:
 
 ```
 sudo apt-get install libcurl4-openssl-dev
