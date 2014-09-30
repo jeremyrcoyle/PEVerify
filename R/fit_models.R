@@ -82,9 +82,13 @@ PE_model=function(trainfile,predfile,outfile,parallel=T,nfolds=200,debug=F){
   #list of models to run
   models=c(c("mwmodel","mw15model","lbnlmodel","lbnl15model",
              "workdaymodel","meanmodel","earthmodel","earthlbnlmodel"),
-           c("gamlbnlmodel", "gamworkdaylbnlmodel", "gamlbnlrhmodel", "gamworkdaylbnlrhmodel", 
+           c("gamlbnlmodel", "gamworkdaylbnlmodel",  
              "gampoccmodel", "gamworkdaylbnlpoccmodel"))
-           
+  
+  #add humidity models if RH is available
+  if("bestlag_rh" %in% names(traindata)){
+    models=c(models,"gamlbnlrhmodel", "gamworkdaylbnlrhmodel")
+  }
   
   #generate matrix of cross-validated predictions and actual values
   #change some_folds to folds when running for real
