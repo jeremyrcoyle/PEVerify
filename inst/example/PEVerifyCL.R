@@ -49,4 +49,4 @@ if(parallel){
 }
 
 nfolds=96
-PE_model(trainingFile,predictionFile,outputFile,parallel,nfolds,debug=T)
+PE_model(trainingFile,predictionFile,outputFile,parallel,nfolds,debug=F)
