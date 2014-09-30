@@ -5,10 +5,18 @@ Date: 2014-09-08
 Author: Jeremy Coyle <jeremyrcoyle@gmail.com>
 Maintainer: Jeremy Coyle <jeremyrcoyle@gmail.com>
 Description: Persistent Efficiency M&V model
-License: GPL-3
+License: BSD
 Depends:
     R (>= 3.0.0),
     origami,
+    data.table,
+    jsonlite,
+    foreach,
+    reshape,
+    plyr,
+    earth,
+    mgcv,
+    zoo
 Suggests:
     testthat,
     class,
